@@ -3,7 +3,7 @@
 Plugin Name:        Login Branding
 Description:        Customize the WordPress login screen with branding options, including a two-column layout and a background image.
 Version:            1.0.1
-Author:             WP Speed Expert
+Author:             OctaHexa Media LLC
 Author URI:         https://octahexa.com
 Text Domain:        login-branding
 Domain Path:        /languages

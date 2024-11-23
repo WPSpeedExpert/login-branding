@@ -75,8 +75,8 @@ This plugin is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/
 
 == Author ==
 
-[WP Speed Expert](https://octahexa.com)
+[OctaHexa Media LLC](https://octahexa.com)
 
 == Donate ==
 
-If you find this plugin useful, please consider making a donation at [https://octahexa.com/donate](https://octahexa.c
+If you find this plugin useful, please consider making a donation at [https://octahexa.com/donate](https://octahexa.com/donate).

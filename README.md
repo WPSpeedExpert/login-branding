@@ -50,10 +50,6 @@ The **Login Branding** plugin allows you to personalize your WordPress login pag
 
 This plugin is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
 
-## Author
-
-[OctaHexa Media LLC](https://octahexa.com)
-
 ---
 
 *Enhance your WordPress login page with Login Branding and create a personalized experience for your users.*

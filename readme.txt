@@ -1,9 +1,21 @@
-# Login Branding
+=== Login Branding ===
+Contributors: octahexa
+Donate link: https://octahexa.com/donate
+Tags: login, branding, custom login, login page, logo, background image
+Requires at least: 5.0
+Tested up to: 6.7.1
+Requires PHP: 5.6
+Stable tag: 1.0.1
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
 Customize the WordPress login screen with branding options, including a two-column layout and a background image.
 
-## Description
+== Description ==
+
 The **Login Branding** plugin allows you to personalize your WordPress login page by adding your own logo, background image, and footer text. It's perfect for branding client sites or enhancing your own login experience.
-## Features
+
+**Features:**
 
 - **Custom Logo**: Replace the default WordPress logo with your own.
 - **Logo Link**: Set a custom URL for your login logo.
@@ -11,16 +23,16 @@ The **Login Branding** plugin allows you to personalize your WordPress login pag
 - **Footer Text**: Add custom footer text to the login page.
 - **Responsive Design**: Ensures the login page looks great on all devices.
 
-## Installation
+== Installation ==
 
 1. **Upload the Plugin Files**
 
-   - Upload the `login-branding` folder to the `/wp-content/plugins/` directory of your WordPress installation.
+   - Upload the `login-branding` folder to the `/wp-content/plugins/` directory.
 
 2. **Activate the Plugin**
 
    - In your WordPress admin dashboard, navigate to **Plugins** > **Installed Plugins**.
-   - Locate **Login Branding** in the list and click **Activate**.
+   - Locate **Login Branding** and click **Activate**.
 
 3. **Configure Plugin Settings**
 
@@ -32,28 +44,39 @@ The **Login Branding** plugin allows you to personalize your WordPress login pag
    - **Footer Text**: Enter the text you want to display at the bottom of the login page.
    - Click **Save Changes** to apply your settings.
 
-## Frequently Asked Questions
+== Frequently Asked Questions ==
 
-**Q:** Where can I find the plugin settings?
+= Where can I find the plugin settings? =
 
-**A:** The settings are located in your WordPress admin dashboard under **Settings** > **Login Branding**.
+The settings are located in your WordPress admin dashboard under **Settings** > **Login Branding**.
 
-**Q:** Can I use this plugin on a client’s site?
+= Can I use this plugin on a client's site? =
 
-**A:** Yes, you can use this plugin to customize the login page on any WordPress site.
+Yes, you can use this plugin to customize the login page on any WordPress site.
 
-**Q:** Does the plugin support multisite installations?
+= Does the plugin support multisite installations? =
 
-**A:** The plugin is designed for single-site installations. Multisite support may require additional customization.
+The plugin is designed for single-site installations. Multisite support may require additional customization.
 
-## License
+== Changelog ==
+
+= 1.0.1 =
+
+- Added `uninstall.php` for proper cleanup upon plugin removal.
+- Added a readme.txt
+
+= 1.0.0 =
+
+- Initial release with customizable logo, background image, and footer text.
+
+== License ==
 
 This plugin is licensed under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html).
 
-## Author
+== Author ==
 
-[OctaHexa Media LLC](https://octahexa.com)
+[WP Speed Expert](https://octahexa.com)
 
----
+== Donate ==
 
-*Enhance your WordPress login page with Login Branding and create a personalized experience for your users.*
+If you find this plugin useful, please consider making a donation at [https://octahexa.com/donate](https://octahexa.c

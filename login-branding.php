@@ -2,8 +2,8 @@
 /*
 Plugin Name:        Login Branding
 Description:        Customize the WordPress login screen with branding options, including a two-column layout and a background image.
-Version:            1.0.0
-Author:             OctaHexa Media LLC
+Version:            1.0.1
+Author:             WP Speed Expert
 Author URI:         https://octahexa.com
 Text Domain:        login-branding
 Domain Path:        /languages
@@ -21,11 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Set default options upon plugin activation
 function login_branding_activate() {
     $defaults = array(
-        'login_branding_logo_url'            => plugin_dir_url(__FILE__) . 'img/octahexa-black-512x150-2.webp',
-        'login_branding_logo_link'           => 'https://octahexa.com/',
-        'login_branding_footer_text'         => 'Need help? Get in touch: support@your-domain.com',
+        'login_branding_logo_url'              => plugin_dir_url(__FILE__) . 'img/octahexa-black-512x150-2.webp',
+        'login_branding_logo_link'             => home_url(),
+        'login_branding_footer_text'           => 'Need help? Get in touch on +1234567890',
         'login_branding_background_image_path' => plugin_dir_url(__FILE__) . 'img/background.webp',
-        'login_branding_background_color'    => '#ffffff',
+        'login_branding_background_color'      => '#ffffff',
     );
 
     foreach ( $defaults as $key => $value ) {
@@ -76,7 +76,7 @@ function login_branding_logo_url_callback() {
 }
 
 function login_branding_logo_link_callback() {
-    $logo_link = esc_url(get_option('login_branding_logo_link'));
+    $logo_link = esc_url(get_option('login_branding_logo_link', home_url())); // Set default to home_url()
     echo '<input type="text" name="login_branding_logo_link" value="' . $logo_link . '" size="50" />';
 }
 
@@ -161,13 +161,13 @@ function login_branding_login_style() {
             border: 1px solid #eee;
             border-radius: 3px !important;
             height: 55px;
-            padding: 0 12px; /* Add padding for consistent appearance */
-            box-sizing: border-box; /* Ensure padding and border are included in width */
+            padding: 0 12px;
+            box-sizing: border-box;
             transition: border-color 0.3s;
         }
         #loginform .input:focus,
         #loginform .input:hover {
-            border-color: #009cff; /* Change the border color on hover and focus */
+            border-color: #009cff;
             outline: none;
         }
         #loginform .login label {
@@ -249,7 +249,7 @@ function login_branding_login_style() {
 
 // Change the login logo link URL
 function login_branding_login_logo_url() {
-    $logo_link = esc_url(get_option('login_branding_logo_link', home_url()));
+    $logo_link = esc_url(get_option('login_branding_logo_link', home_url())); // Set default to home_url()
     return $logo_link;
 }
 add_filter('login_headerurl', 'login_branding_login_logo_url');

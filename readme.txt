@@ -1,11 +1,11 @@
 === Login Branding ===
 Contributors: octahexa
 Donate link: https://octahexa.com/donate
-Tags: login, branding, custom login, login page, logo, background image
+Tags: login, branding, custom login, login page, wp-admin
 Requires at least: 5.0
 Tested up to: 6.7.1
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,12 +60,7 @@ The plugin is designed for single-site installations. Multisite support may requ
 
 == Changelog ==
 
-= 1.0.1 =
-
-- Added `uninstall.php` for proper cleanup upon plugin removal.
-- Added a readme.txt
-
-= 1.0.0 =
+= 1.0.3 =
 
 - Initial release with customizable logo, background image, and footer text.
 

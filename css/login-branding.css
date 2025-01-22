@@ -1,0 +1,180 @@
+/**
+ * File: login-branding.css
+ * Version: 1.4.2
+ * Last Modified: 2024-12-05
+ * Description: Styles for the customized WordPress login page.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Open+Sans:wght@400;500;600&display=swap');
+
+/* General Styles */
+body.login {
+    background-color: var(--background-color, #ffffff);
+    background-image: url(var(--background-image, none));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: hidden;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#login h1 a {
+    background-image: url(var(--logo-url, none)) !important;
+    background-size: contain;
+    height: 70px;
+    width: 310px;
+}
+
+/* Login Form and Main Area */
+#login {
+    background-color: var(--first-column-bg-color, #ffffff);
+    color: var(--text-color, #000000);
+    padding: 0% 6% !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+}
+
+#loginform,
+#lostpasswordform,
+#resetpassform {
+    background-color: var(--first-column-bg-color, #ffffff);
+    padding: 0;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#loginform .input,
+#lostpasswordform .input,
+#resetpassform .input {
+    background-color: var(--input-bg-color, #ffffff);
+    color: var(--input-text-color, #000000);
+    border: 1px solid #eee;
+    border-radius: 3px !important;
+    height: 55px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#loginform .input:focus,
+#lostpasswordform .input:focus,
+#resetpassform .input:focus,
+#loginform .input:hover,
+#lostpasswordform .input:hover,
+#resetpassform .input:hover {
+    border-color: var(--button-color, #009cff);
+    outline: none;
+}
+
+/* Button Styling */
+#loginform .submit input,
+#lostpasswordform .submit input,
+#resetpassform .submit input {
+    background-color: var(--button-color, #009cff);
+    color: var(--button-text-color, #ffffff);
+    border: none !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px !important;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+#loginform .submit input:hover,
+#lostpasswordform .submit input:hover,
+#resetpassform .submit input:hover {
+    background-color: var(--button-hover-color, #0f88d5);
+    transition: all 0.2s;
+}
+
+/* Turnstile Specific Styles */
+#loginform .cf-turnstile,
+#lostpasswordform .cf-turnstile,
+#resetpassform .cf-turnstile {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Link and Footer Text */
+#login #nav a,
+#login #backtoblog a,
+#login .forgetmenot a,
+.login .privacy-policy-page-link {
+    color: var(--text-color, #000000) !important;
+    transition: color 0.3s;
+}
+
+#login #nav a:hover,
+#login #backtoblog a:hover,
+#login .forgetmenot a:hover,
+.login .privacy-policy-page-link:hover {
+    color: var(--button-hover-color, #0f88d5) !important;
+}
+
+#backtoblog::after {
+    content: var(--footer-text, 'Need help? Get in touch: support@example.com');
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    color: var(--text-color, #000000);
+    font-weight: 600;
+}
+
+/* Error Message Styles */
+.login .message,
+.login .error,
+.login .notice {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-left: 4px solid #dc3232;
+    background-color: #f8d7da;
+    color: #000000;
+}
+
+.login .message a,
+.login .error a,
+.login .notice a {
+    color: #0073aa;
+    transition: color 0.3s;
+}
+
+.login .message a:hover,
+.login .error a:hover,
+.login .notice a:hover {
+    color: var(--button-hover-color, #0f88d5);
+}
+
+.login .message {
+    border-left-color: #0073aa;
+    background-color: #d1ecf1;
+}
+
+/* Responsive Styles */
+@media (min-width: 1200px) {
+    #login {
+        width: 21vw !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    #login {
+        position: relative !important;
+        width: 88vw !important;
+        height: 100% !important;
+    }
+    #login::after {
+        display: none !important;
+    }
+}
